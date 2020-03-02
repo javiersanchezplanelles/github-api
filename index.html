@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="js-input" placeholder="Search username..." />
+      <button id="js-button">Search</button>
+      <div class="user" id="js-userContainer">
+        <div class="user__info">
+          <img src="" id="js-avatar" alt="" />
+          <div class="user__info__content">
+            <p class="user__info__content__login" id="js-login"></p>
+            <p class="user__info__content__name" id="js-name"></p>
+            <p class="user__info__content__bio" id="js-bio"></p>
+          </div>
+        </div>
+        <div class="user__repositories">
+          <p class="user__repositories__title">Repositories</p>
+          <ul class="user__repositories__list" id="js-repos"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="message-error" id="js-errorMessage">
+      <p>Does not exist</p>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

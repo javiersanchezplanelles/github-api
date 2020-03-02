@@ -1,0 +1,140 @@
+body {
+  background-color: #ededed;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+  margin: 20vh auto 0;
+  border-radius: 5px;
+  box-shadow: 8px 10px 20px 0px rgba(130, 130, 130, 1);
+}
+
+.container input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.container button {
+  -webkit-appearance: none;
+  width: 70px;
+  font-weight: 700;
+  border-radius: 3px;
+  border-color: #d1d1d1;
+  transition: transform 250ms ease-out;
+}
+
+.container button:hover {
+  cursor: pointer;
+}
+
+.container button:active {
+  transform: translate(1px, 1px);
+}
+
+.message-container {
+  position: relative;
+}
+
+.user {
+  max-height: 370px;
+  overflow: hidden;
+}
+
+.message-error,
+.user {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 405px;
+  width: 100%;
+}
+
+.message-error {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  background-color: #f8d7da;
+  color: #721c24;
+  width: 100%;
+}
+
+.message-error p {
+  margin: 0;
+}
+
+.message-error.is-shown,
+.user.is-shown {
+  display: block;
+}
+
+.user__info {
+  display: flex;
+}
+
+.user__info img {
+  width: 140px;
+  border-radius: 5px;
+}
+
+.user__info__content {
+  margin-left: 20px;
+}
+
+.user__info__content__login {
+  font-style: italic;
+}
+
+.user__info__content__name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.user__repositories {
+  margin-top: 20px;
+}
+
+.user__repositories__title {
+  font-weight: 700;
+  font-family: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.user__repositories__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.user__repositories__list li {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.user__repositories__list__stats {
+  display: flex;
+  float: right;
+}
+
+.user__repositories__list__stats ion-icon {
+  margin-right: 5px;
+  margin-left: 5px;
+}
